@@ -81,7 +81,7 @@ I've put this a script `ResetTouchScreen.ps1`, this can be setup as a scheduled 
 
 ## Drivers to find manufacturer sources of
 
-Ideally manufacturers or Windows update would provide all of these drivers, that are currently only avaialble on the GPD Pocket 4 page.
+Ideally manufacturers or Windows update would provide all of these drivers, that are currently only available on the GPD Pocket 4 page.
 
 <https://gpd.hk/gpdpocket4firmware>
 
