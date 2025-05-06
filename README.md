@@ -73,8 +73,8 @@ Occasionaly the i2c HID device that is the touchscreen layer does not resume for
 Disabling/Enabling the device restores the touch function - this can be done in Device Manager or Powershell (as Admin).
 
 ```Powershell
-    Disable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
-    Enable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
+Disable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
+Enable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
 ```
 
 I've put this a script `ResetTouchScreen.ps1`, this can be setup as a scheduled task in Task Scheduler. 
