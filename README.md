@@ -66,6 +66,19 @@ Set-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Enum\HID\VID_258A&PID_000
 Set-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Enum\HID\VID_258A&PID_000C&MI_01&Col01\8&146c7df7&0&0000\Device Parameters" -Name "FlipFlopHScroll" -Type DWord -Value 1
 ```
 
+# Touchscreen HID Device
+
+Occasionaly the i2c HID device that is the touchscreen layer does not resume form suspend - and reports its status in Device Manager as malfunctioning.
+
+Disabling/Enabling the device restores the touch function - this can be done in Device Manager or Powershell (as Admin).
+
+```Powershell
+    Disable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
+    Enable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
+```
+
+I've put this a script `ResetTouchScreen.ps1`, this can be setup as a scheduled task in Task Scheduler. 
+
 ## Drivers to find manufacturer sources of
 
 Ideally manufacturers or Windows update would provide all of these drivers, that are currently only avaialble on the GPD Pocket 4 page.
