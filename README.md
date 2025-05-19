@@ -68,7 +68,7 @@ Set-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Enum\HID\VID_258A&PID_000
 
 # Touchscreen HID Device
 
-Occasionaly the i2c HID device that is the touchscreen layer does not resume form suspend - and reports its status in Device Manager as malfunctioning.
+Occasionally the i2c HID device that is the touchscreen layer does not resume form suspend - and reports its status in Device Manager as malfunctioning.
 
 Disabling/Enabling the device restores the touch function - this can be done in Device Manager or Powershell (as Admin).
 
