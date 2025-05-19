@@ -77,7 +77,7 @@ Disable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
 Enable-PnpDevice -InstanceId "ACPI\NVTK0603\4" -Confirm:$false
 ```
 
-I've put this a script `ResetTouchScreen.ps1`, this can be setup as a scheduled task in Task Scheduler. 
+I've put this a script `ResetTouchScreen.ps1`, this can be setup as a scheduled task in Task Scheduler. Sample configuration in `ResetTouchscreen.xml`
 
 ## Drivers to find manufacturer sources of
 
